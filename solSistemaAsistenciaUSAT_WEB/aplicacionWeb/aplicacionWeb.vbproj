@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -90,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="fondoSistemaWeb.jpg" />
+    <Content Include="permisos.aspx" />
     <Content Include="wfManUsuario.aspx" />
     <Content Include="wfConsultas.aspx" />
     <Content Include="wfManEmpleado.aspx" />
@@ -105,6 +108,13 @@
     <Content Include="wucMenuVertical.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="permisos.aspx.designer.vb">
+      <DependentUpon>permisos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="permisos.aspx.vb">
+      <DependentUpon>permisos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="wfManUsuario.aspx.designer.vb">
       <DependentUpon>wfManUsuario.aspx</DependentUpon>
     </Compile>
